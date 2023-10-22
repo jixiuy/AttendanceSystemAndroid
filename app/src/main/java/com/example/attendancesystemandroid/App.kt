@@ -1,11 +1,16 @@
 package com.example.attendancesystemandroid
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import android.app.Application
+import android.content.Context
+import android.widget.Toast
 
-class App : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_app)
+class App : Application() {
+    companion object{
+        lateinit var context: Context
     }
+    override fun onCreate() {
+        super.onCreate()
+        context = applicationContext
+    }
+
 }

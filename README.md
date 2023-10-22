@@ -1,7 +1,6 @@
-# AttendanceSystemAndroid
-签到系统安卓端
+# AttendanceSystemAndroid签到系统安卓端
 
-MVVM标准包结构示例：
+# MVVM标准包结构示例：
 - app
     - data
         - model
@@ -33,3 +32,8 @@ MVVM标准包结构示例：
 - utils目录包含通用的实用工具类，如网络工具（NetworkUtils）和日期工具（DateUtils）。
 - App.kt是应用程序的入口点。
 
+# 功能对标网页版：
+- Home：首页签到界面
+- Sort：排名界面（老人和新人）
+- Record：可以切换学期展示
+- Mine：网页版的关于“功能”，主题色切换功能
