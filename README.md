@@ -28,8 +28,8 @@ MVVM标准包结构示例：
         - DateUtils.kt
     - App.kt
 
-data目录包含与数据相关的类，如数据模型（model），数据仓库（repository），远程数据访问（remote）和本地数据访问（local）。
-ui目录包含用户界面相关的类，如活动（activities），适配器（adapters）和视图模型（viewmodels）。
-utils目录包含通用的实用工具类，如网络工具（NetworkUtils）和日期工具（DateUtils）。
-App.kt是应用程序的入口点。
+- data目录包含与数据相关的类，如数据模型（model），数据仓库（repository），远程数据访问（remote）和本地数据访问（local）。
+- ui目录包含用户界面相关的类，如活动（activities），适配器（adapters）和视图模型（viewmodels）。
+- utils目录包含通用的实用工具类，如网络工具（NetworkUtils）和日期工具（DateUtils）。
+- App.kt是应用程序的入口点。
 
