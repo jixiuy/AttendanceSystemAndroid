@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_black"
+        android:title="首页" />
+
+    <item
+        android:id="@+id/sort"
+        android:icon="@drawable/bar_chart_black"
+        android:title="排序" />
+
+    <item
+        android:id="@+id/record"
+        android:icon="@drawable/more_black"
+        android:title="记录" />
+
+    <item
+        android:id="@+id/mine"
+        android:icon="@drawable/manage_accounts_black"
+        android:title="设置" />
+</menu>
