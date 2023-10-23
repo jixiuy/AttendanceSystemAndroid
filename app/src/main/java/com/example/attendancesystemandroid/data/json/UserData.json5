@@ -1,0 +1,86 @@
+{
+  "data": [
+    {
+      "userId": 2100301413,
+      "userName": "蒋熹煜",
+      "userDept": "软件部",
+      "userLocation": "5109",
+      "totalTime": "4.23",
+      "week": 8
+    },
+    {
+      "userId": 2200311024,
+      "userName": "王文杰",
+      "userDept": "软件部",
+      "userLocation": "5108",
+      "totalTime": "3.55",
+      "week": 8
+    },
+    {
+      "userId": 2200310206,
+      "userName": "张诗榕",
+      "userDept": "硬件部",
+      "userLocation": "5109",
+      "totalTime": "2.43",
+      "week": 8
+    },
+    {
+      "userId": 2200470110,
+      "userName": "谭佳卉",
+      "userDept": "多媒体部",
+      "userLocation": "5108",
+      "totalTime": "1.80",
+      "week": 8
+    },
+    {
+      "userId": 2200310517,
+      "userName": "刘凯",
+      "userDept": "软件部",
+      "userLocation": "5108",
+      "totalTime": "1.70",
+      "week": 8
+    },
+    {
+      "userId": 2200310815,
+      "userName": "黄浩洋",
+      "userDept": "多媒体部",
+      "userLocation": "5108",
+      "totalTime": "1.26",
+      "week": 8
+    },
+    {
+      "userId": 2200100501,
+      "userName": "韩睿鑫",
+      "userDept": "软件部",
+      "userLocation": "5108",
+      "totalTime": "1.20",
+      "week": 8
+    },
+    {
+      "userId": 2200310830,
+      "userName": "喻建霖",
+      "userDept": "硬件部",
+      "userLocation": "5109",
+      "totalTime": "1.03",
+      "week": 8
+    },
+    {
+      "userId": 2200350101,
+      "userName": "白楚榆",
+      "userDept": "软件部",
+      "userLocation": "5108",
+      "totalTime": "1.01",
+      "week": 8
+    },
+    {
+      "userId": 2200320242,
+      "userName": "张琥",
+      "userDept": "软件部",
+      "userLocation": "5108",
+      "totalTime": "0.91",
+      "week": 8
+    }
+  ],
+  "code": 0,
+  "msg": "成功获取老人有效排行榜"
+}

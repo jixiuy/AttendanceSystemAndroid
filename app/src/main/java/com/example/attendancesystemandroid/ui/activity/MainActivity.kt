@@ -1,10 +1,11 @@
+@file:Suppress("DEPRECATION")
+
 package com.example.attendancesystemandroid.ui.activity
 
 import android.app.Activity
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.WindowManager
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
