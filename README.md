@@ -12,9 +12,6 @@
     - local
       - UserDao.kt
       - Database.kt
-  - di
-    - AppModule.kt
-    - AppComponent.kt
   - ui
     - activities
       - MainActivity.kt

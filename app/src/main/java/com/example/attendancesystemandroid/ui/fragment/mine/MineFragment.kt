@@ -20,8 +20,4 @@ class MineFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_mine, container, false)
     }
 
-    companion object {
-        @JvmStatic
-        fun newInstance() = MineFragment()
-    }
 }

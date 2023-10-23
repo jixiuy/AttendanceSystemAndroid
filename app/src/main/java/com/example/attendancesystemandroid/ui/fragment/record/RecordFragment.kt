@@ -21,8 +21,5 @@ class RecordFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_record, container, false)
     }
 
-    companion object {
-        @JvmStatic
-        fun newInstance() = RecordFragment()
-    }
+
 }

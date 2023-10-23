@@ -10,8 +10,11 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven(url = "https://www.jitpack.io")
     }
 }
+
+
 
 rootProject.name = "AttendanceSystemAndroid"
 include(":app")
