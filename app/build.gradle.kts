@@ -40,6 +40,7 @@ android {
 }
 
 dependencies {
+
     implementation("com.github.AAChartModel:AAChartCore-Kotlin:-SNAPSHOT")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("io.github.scwang90:refresh-layout-kernel:2.1.0")      //核心必须依赖

@@ -22,11 +22,11 @@ import com.github.aachartmodel.aainfographics.aachartcreator.AASeriesElement
 import com.scwang.smart.refresh.header.ClassicsHeader
 
 
-class SortFragment : Fragment() {
+class SortFragment(index: Int) : Fragment() {
     private lateinit var sortViewModel: SortViewModel
     private var binding: FragmentSortBinding? = null
     private lateinit var fadeInAnimation: Animation
-
+    private val index = index
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -45,14 +45,16 @@ class SortFragment : Fragment() {
             .title("签到排名")
             .dataLabelsEnabled(true)
             .backgroundColor("#FFFFFF")
-            .tooltipEnabled(false)
+//            .tooltipEnabled(false)
             .legendEnabled(false)
+            .touchEventEnabled(true)
             .yAxisTitle("")
             .colorsTheme(arrayOf("deepskyblue"))
             .categories(names.toTypedArray())
             .series(
                 arrayOf(
                     AASeriesElement()
+                        .name("时长")
                         .data(times.toTypedArray())
 
                 )
@@ -99,7 +101,7 @@ class SortFragment : Fragment() {
         // 创建 sortViewModel 对象
         sortViewModel = ViewModelProvider(this)[SortViewModel::class.java]
         // 观察 getUsers 方法返回的 LiveData 对象
-        sortViewModel.getUsers().observe(viewLifecycleOwner) { resource ->
+        sortViewModel.getRank(index).observe(viewLifecycleOwner) { resource ->
             when (resource.status) {
                 Resource.Status.LOADING -> {
                 }
@@ -112,7 +114,7 @@ class SortFragment : Fragment() {
 
                     binding?.let {
                         if (data != null) {
-                            initRecyclerView(it.recyclerView,SortAdapter(data.data))
+                            initRecyclerView(it.recyclerView,SortRVAdapter(data.data))
                         }
                     }
                 }
@@ -123,5 +125,7 @@ class SortFragment : Fragment() {
                 }
             }
         }
+
+
     }
 }

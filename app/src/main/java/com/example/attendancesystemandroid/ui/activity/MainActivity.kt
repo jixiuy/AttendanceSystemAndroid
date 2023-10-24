@@ -7,14 +7,9 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
-import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.example.attendancesystemandroid.R
 import com.example.attendancesystemandroid.databinding.ActivityMainBinding
-import com.example.attendancesystemandroid.ui.fragment.Home.HomeFragment
-import com.example.attendancesystemandroid.ui.fragment.mine.MineFragment
-import com.example.attendancesystemandroid.ui.fragment.record.RecordFragment
-import com.example.attendancesystemandroid.ui.fragment.sort.SortFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding:ActivityMainBinding
@@ -24,12 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         setTransparentStatusBar(this)
 
-        val fragments: MutableList<Fragment> = ArrayList()
-        fragments.add(HomeFragment())
-        fragments.add(SortFragment())
-        fragments.add(RecordFragment())
-        fragments.add(MineFragment())
-        val adapter = ViewPager2Adapter(fragments,this)
+        val adapter = binding?.viewPager2?.let { ViewPager2Adapter(this) }
         binding.viewPager2.adapter = adapter
 
         binding.bottomNavView.setOnItemSelectedListener { item ->

@@ -9,7 +9,7 @@ import com.example.attendancesystemandroid.R
 import com.example.attendancesystemandroid.data.model.User
 import com.example.attendancesystemandroid.databinding.SortItemLayoutBinding
 
-class SortAdapter(private val users: List<User>) : RecyclerView.Adapter<SortAdapter.ViewHolder>() {
+class SortRVAdapter(private val users: List<User>) : RecyclerView.Adapter<SortRVAdapter.ViewHolder>() {
 
     // 3. 创建ViewHolder类
     class ViewHolder(val binding: SortItemLayoutBinding) : RecyclerView.ViewHolder(binding.root)

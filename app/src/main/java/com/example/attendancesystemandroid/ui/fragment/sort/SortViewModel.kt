@@ -1,5 +1,6 @@
 package com.example.attendancesystemandroid.ui.fragment.sort
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
 import com.example.attendancesystemandroid.data.remote.ApiHelper
@@ -13,12 +14,17 @@ class SortViewModel:ViewModel(){
 
     private var sortRepository: SortRepository = SortRepository(ApiHelper(ServiceCreator.create(ApiService::class.java)))
 
-    fun getUsers() = liveData(Dispatchers.IO){
+    fun getRank(index: Int) = liveData(Dispatchers.IO){
         emit(Resource.loading(data = null))
         try {
-            emit(Resource.success(data = sortRepository.getUsers()))
+            when(index){
+                2->emit(Resource.success(data = sortRepository.getOldUsers()))
+                1->emit(Resource.success(data = sortRepository.getUsers()))
+            }
         } catch (exception: Exception) {
             emit(Resource.error(data = null, message = exception.message ?: "Error Occurred!"))
         }
     }
+
+
 }
